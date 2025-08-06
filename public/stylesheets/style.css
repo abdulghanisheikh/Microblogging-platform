@@ -1,0 +1,7 @@
+.text-shadow-delete:hover{
+    text-shadow:2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.text-shadow-like:hover{
+    text-shadow:2px 2px 4px rgba(0, 136, 255, 0.5);
+}
