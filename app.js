@@ -23,6 +23,7 @@ app.get("/create",function(req,res){
 
 app.post("/register",async function(req,res){
     const {name,username,email,age,password}=req.body;
+    if(name===""||username===""||email===""||age===""||password==="") return res.status(500).send("All fields are mandatory");
     let user=await userModel.findOne({username:username});
     if(user) return res.status(500).send("User already registered");
     bcrypt.genSalt(10,function(err,salt){
@@ -51,6 +52,7 @@ app.get("/profile",isLoggedIn,async function(req,res){
 
 app.post("/login",async function(req,res){
     const {email,password}=req.body;
+    if(email===""||password==="") res.status(500).send("Email or password is missing");
     const user=await userModel.findOne({email});
     if(!user) return res.status(500).send("something is wrong");
     bcrypt.compare(password,user.password,function(err,result){
@@ -69,9 +71,11 @@ app.get("/logout",function(req,res){
 //middleware
 function isLoggedIn(req,res,next){
     if(req.cookies.token==="") return res.redirect("/login");
-    let data=jwt.verify(req.cookies.token,"secretKey");
-    req.user=data;
-    next();
+    else{
+        let data=jwt.verify(req.cookies.token,"secretKey");
+        req.user=data;
+        next();
+    }
 }
 
 app.post("/post",isLoggedIn,async function(req,res){

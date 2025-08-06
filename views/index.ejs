@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <title>Document</title>
 </head>
 <body>
-    <p>nothing here</p>
+    <div class="w-full flex flex-col justify-between min-h-screen bg-zinc-900 text-white">
+        <div class="navbar flex flex-col gap-5">
+            <div class="flex flex-col items-center">
+                <div class="flex p-5 w-full justify-between items-center">
+                    <h1 class="px-5 tracking-tighter text-2xl text-shadow-app font-semibold">Microblogging App</h1>
+                    <div class="flex gap-3 h-fit">
+                        <a href="/create" class="text-green-500 bg-zinc-800 hover:bg-green-500 hover:text-white duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 text-xl tracking-tighter">New User</a>
+                        <a href="/logout" class="text-yellow-500 bg-zinc-800 hover:bg-yellow-500 hover:text-black duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 text-xl tracking-tighter">Login</a>
+                        <a href="/logout" class="text-blue-500 bg-zinc-800 hover:bg-blue-500 hover:text-white duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 text-xl tracking-tighter">Profile</a>
+                    </div>
+                </div>
+                <hr class="w-full border-zinc-800">
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 p-20 w-full h-100">
+            <h1 class="text-8xl"><span class="font-light">Your</span> <span class="italic">thoughts</span>, <span class="font-light">your</span> <span class="italic">space</span>.</h1>
+            <a href="/create" class="rounded-full hover:bg-blue-600 bg-transparent border-2 border-zinc-600 p-5 w-fit mb-30 hover:scale-105 hover:bg-blue-500 duration-300 ease-in-out">Getting started</a>
+        </div>
+        <div>
+            <hr class="border-zinc-800 border-1">
+            <div class="footer px-4 py-2 w-full flex justify-between items-center">
+                <a href="https://www.linkedin.com/in/abdul-ghani-a5192625b/"><h1 class="tracking-tight"><span class="text-zinc-500">Built by</span> <span class="font-semibold">Abdul Ghani</span></h1></a>
+                <div class="flex gap-5 items-center">
+                    <p class="text-zinc-500 tracking-tight">Contact :</p>
+                    <a href="https://github.com/abdulghanisheikh"><img src="/images/github.png" class="object-cover h-8 w-8" alt=""></a>
+                    <a href="mailto:ghanisheikh26@gmail.com"><img src="/images/gmail.png" class="object-cover h-8 w-8" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

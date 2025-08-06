@@ -7,20 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="relative w-full min-h-screen bg-zinc-900 text-white">
-        <div class="navbar">
-            <a href="/login" class="text-yellow-400 hover:bg-yellow-400 hover:text-black duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 absolute top-3 right-10 text-xl tracking-tighter">Login</a>
-            <a href="/profile" class="text-blue-500 hover:bg-blue-500 hover:text-white duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 absolute top-3 right-40 text-xl tracking-tighter">Profile</a>
+    <div class="w-full flex flex-col py-5 gap-10 min-h-screen bg-zinc-900 text-white">
+        <div class="navbar flex flex-col gap-5 justify-between w-full">
+            <div class="flex gap-5 px-20 self-end">
+                <a href="/" class="text-white bg-zinc-800 hover:bg-zinc-200 hover:text-black duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 text-xl tracking-tighter">Home</a>
+                <a href="/login" class="text-yellow-400 bg-zinc-800 hover:bg-yellow-400 hover:text-black duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 text-xl tracking-tighter">Login</a>
+                <a href="/profile" class="text-blue-500 bg-zinc-800 hover:bg-blue-500 hover:text-white duration-[0.75s] ease-in-out py-3 px-4 border-1 outline-none rounded-lg border-zinc-800 text-xl tracking-tighter">Profile</a>
+            </div>
+            <hr class="w-full border-zinc-800">
         </div>
-        <h1 class="text-5xl tracking-tighter absolute top-10 left-20">Create User.</h1>
-        <form action="/register" method="post" class="bg-zinc-700 w-150 py-5 rounded-lg px-4 flex flex-col absolute top-30 left-20 gap-5">
-            <input type="text" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="name" name="name">
-            <input type="text" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="username" name="username">
-            <input type="email" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="email" name="email">
-            <input type="password" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="password" name="password">
-            <input type="number" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="age" name="age">
-            <input type="submit" class="outline-none hover:scale-105 duration-300 ease-in-out hover:bg-blue-500 py-3 px-4 rounded-lg tracking-tighter bg-transparent border-2 border-blue-500 cursor-pointer w-40 h-fit" value="Register">
-        </form>
+        <div class="flex flex-col gap-5 px-25">
+            <h1 class="text-5xl tracking-tight">Create User.</h1>
+            <form action="/register" method="post" class="bg-zinc-700 w-150 py-5 rounded-lg px-4 flex flex-col gap-5">
+                <input type="text" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="name" name="name">
+                <input type="text" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="username" name="username">
+                <input type="email" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="email" name="email">
+                <input type="password" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="password" name="password">
+                <input type="number" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="age" name="age">
+                <input type="submit" class="outline-none hover:scale-105 duration-300 ease-in-out hover:bg-blue-500 py-3 px-4 rounded-lg tracking-tighter bg-transparent border-2 border-blue-500 cursor-pointer w-40 h-fit" value="Register">
+            </form>
+        </div>
     </div>
 </body>
 </html>
