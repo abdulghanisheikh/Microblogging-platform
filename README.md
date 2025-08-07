@@ -1,6 +1,6 @@
 # 📝 Microblogging Platform
 
-A simple microblogging web application where user can post short blogs.
+A simple microblogging web application where user can post and manage short blogs.
 
 ## 🔧 Tech Stack
 
