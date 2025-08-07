@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <div class="w-full flex flex-col gap-15 min-h-screen bg-zinc-900 text-white">
@@ -16,8 +17,8 @@
             <hr class="w-full border-zinc-800">
         </div>
         <div class="flex flex-col gap-5 px-25">
-            <h1 class="text-5xl tracking-tighter">Login User.</h1>
-            <form action="/login" method="post" class="bg-zinc-700 w-150 py-5 rounded-lg px-4 flex flex-col gap-5">
+            <h1 class="login text-5xl tracking-tighter">Login User.</h1>
+            <form action="/login" method="post" class="loginForm bg-zinc-700 w-150 py-5 rounded-lg px-4 flex flex-col gap-5">
                 <input type="email" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="email" name="email">
                 <input type="password" class="outline-none hover:scale-105 duration-300 ease-in-out py-3 px-4 rounded-lg tracking-tighter bg-zinc-800" placeholder="password" name="password">
                 <input type="submit" class="outline-none hover:scale-105 duration-300 ease-in-out hover:bg-yellow-400 hover:text-black py-3 px-4 rounded-lg tracking-tighter bg-zinc-700 border-2 border-yellow-400 cursor-pointer w-40 h-fit" value="Log In">

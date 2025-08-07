@@ -22,7 +22,7 @@
         </div>
         <div class="flex gap-5 w-full px-10 justify-around py-5">
             <div class="profile flex flex-col gap-10 w-1/2">
-                <div class="flex gap-5 items-center">
+                <div class="updiv flex gap-5 items-center">
                     <div class="h-35 w-32 overflow-hidden rounded-lg border-1 bg-zinc-800 cursor-pointer">
                     <img class="w-full h-full object-cover" src="/images/uploads/<%= user.profilePic %>" alt="">
                     </div>
@@ -33,7 +33,7 @@
                         <h1 class="text-4xl tracking-tighter self-end"><span class="text-zinc-600 font-light">Hello,</span> <%= user.name %> 👋</h1>
                     </div>
                 </div>
-                <div class="mt-5">
+                <div class="mt-5 downdiv">
                     <h3 class="text-2xl">You can create a new post</h3>
                     <form action="/post" method="post">
                         <textarea type="text" class="mt-2 border-1 outline-none rounded-lg p-3 resize-none w-100 h-30" placeholder="What's on your mind?" name="content"></textarea>
@@ -52,7 +52,7 @@
                             </div>
                             <div class="mt-5">
                                 <small><%= item.like.length %></small>
-                                <div class="btns flex justify-between">
+                                <div class="btns flex justify-between items-center">
                                     <a href="/like/<%= item._id %>" class="text-zinc-400 text-shadow-like">
                                         <% if(item.like.indexOf(user._id)===-1){ %>
                                             Like
@@ -60,7 +60,10 @@
                                             Unlike
                                         <% } %>
                                     </a>
-                                    <a href="/delete/<%= item._id %>" class="text-shadow-delete text-red-500">Delete</a>
+                                    <div class="flex gap-3">
+                                        <a href="/delete/<%= item._id %>" class="text-shadow-delete text-red-500">Delete</a>
+                                        <a href="/edit/<%= item._id %>" class="text-shadow-edit text-zinc-400">Edit</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

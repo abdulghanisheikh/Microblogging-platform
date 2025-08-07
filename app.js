@@ -71,7 +71,7 @@ app.get("/logout",function(req,res){
 
 //middleware
 function isLoggedIn(req,res,next){
-    if(req.cookies.token==="") return res.redirect("/login");
+    if(req.cookies.token==="") {return res.redirect("/login");}
     else{
         let data=jwt.verify(req.cookies.token,"secretKey");
         req.user=data;
@@ -122,6 +122,19 @@ app.post("/uploadProfile",isLoggedIn,upload.single("profilePic"),async function(
     await userModel.findOneAndUpdate({email:user.email},{
         profilePic:req.file.filename
     });
+    res.redirect("/profile");
+});
+
+app.get("/edit/:id",isLoggedIn,async function(req,res){
+    let post=await postModel.findOne({_id:req.params.id});
+    res.render("edit",{post});
+});
+
+app.post("/edit/:id",isLoggedIn,async function(req,res){
+    const {content}=req.body;
+    let post=await postModel.findOne({_id:req.params.id});
+    post.content=content;
+    await post.save();
     res.redirect("/profile");
 });
 

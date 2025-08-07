@@ -6,10 +6,59 @@
     text-shadow:2px 2px 4px rgba(0, 136, 255, 0.5);
 }
 
+.text-shadow-edit:hover{
+    text-shadow:2px 2px 4px rgba(0, 106, 192, 0.5);
+}
+
 .text-shadow-app{
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
 
 ::selection{
     color:aqua;
+}
+
+.tagline,.login,.updiv,.uploadPic,.createLine{
+    animation:customAnimate 1s ease-in-out;
+}
+
+.startBtn,.downdiv,.loginForm,.uploadForm,.createForm{
+    animation:customAnimate2 1s ease-in-out;
+}
+
+@keyframes customAnimate{
+    from{
+        opacity:0;
+        transform:translateY(-8%);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.post{
+    animation:customAnimate3 1s ease-in-out;
+}
+
+@keyframes customAnimate2{
+    from{
+        opacity:0;
+        transform:translateY(+8%);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes customAnimate3{
+    from{
+        opacity:0;
+        transform:translateX(+8%);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
 }
