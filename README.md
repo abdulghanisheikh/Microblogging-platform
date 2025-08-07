@@ -74,7 +74,6 @@ npm install
 
 ## 📌 Future Improvements
 
-- 📷 Profile picture
 - 🖋️ Edit post
 
 
