@@ -6,6 +6,7 @@ const path=require('path');
 const cookieParser=require('cookie-parser');
 const userModel=require('./models/user');
 const postModel=require('./models/post');
+const upload=require('./config/multerconfig');
 
 app.use(cookieParser());
 app.use(express.json());
@@ -109,6 +110,18 @@ app.get("/delete/:id",isLoggedIn,async function(req,res){
     let deletedPost=await postModel.findOneAndDelete({_id:req.params.id});
     user.post.splice(user.post.indexOf(deletedPost._id),1);
     user.save();
+    res.redirect("/profile");
+});
+
+app.get("/profile/upload",function(req,res){
+    res.render("profileUpload");
+});
+
+app.post("/uploadProfile",isLoggedIn,upload.single("profilePic"),async function(req,res){
+    let user=await userModel.findOne({_id:req.user.id});
+    await userModel.findOneAndUpdate({email:user.email},{
+        profilePic:req.file.filename
+    });
     res.redirect("/profile");
 });
 
