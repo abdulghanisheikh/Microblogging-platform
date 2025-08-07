@@ -30,7 +30,8 @@ A simple microblogging web application where user can post short blogs.
 > <img width="1917" height="860" alt="image" src="https://github.com/user-attachments/assets/40ea2f48-80cf-414f-b471-2436bae2db96" />
 
 > # Profile
-> <img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/7353b33f-88bb-4ec2-8a89-2e8229ad0286" />
+> <img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/90497c1e-bc7b-4849-8e85-5cff3e76d253" />
+
 
 
 ## 🚀 Getting Started
