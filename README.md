@@ -73,8 +73,8 @@ npm install
 
 ## 📌 Future Improvements
 
-- 📷 Pictures upload
-- 🖋️ Edit post functionality
+- 📷 Profile picture
+- 🖋️ Edit post
 
 
 ## 🧑‍💻 Author
