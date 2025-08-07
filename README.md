@@ -9,7 +9,7 @@ A simple microblogging web application where user can post short blogs.
 - **Database:** MongoDB with Mongoose
 - **Authentication:** JWT & Cookies
 - **Session Management:** Cookie-based.
-- **Others:** bcrypt for password hashing.
+- **Security:** bcrypt for password hashing.
 
 ## ✨ Features
 
