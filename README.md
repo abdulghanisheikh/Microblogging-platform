@@ -73,11 +73,6 @@ npm install
 - [TailwindCSS](https://tailwindcss.com/)
 - [JWT](https://jwt.io/)
 
-## 📌 Future Improvements
-
-- 🖋️ Edit post
-
-
 ## 🧑‍💻 Author
 
 **Abdul Ghani**  
