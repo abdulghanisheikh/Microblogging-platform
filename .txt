@@ -1,6 +1,0 @@
-basic app in which users can write the posts.
-login and register
-logout
-post creation
-post like
-post delete->only seen to owner
