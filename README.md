@@ -1,6 +1,6 @@
 # 📝 Microblogging Platform
 
-A simple microblogging web application where user can post short blogs.
+A simple microblogging web application where user can post and manage short blogs.
 
 ## 🔧 Tech Stack
 
@@ -30,7 +30,8 @@ A simple microblogging web application where user can post short blogs.
 > <img width="1917" height="860" alt="image" src="https://github.com/user-attachments/assets/40ea2f48-80cf-414f-b471-2436bae2db96" />
 
 > # Profile
-> <img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/90497c1e-bc7b-4849-8e85-5cff3e76d253" />
+> <img width="1919" height="865" alt="image" src="https://github.com/user-attachments/assets/871bb80b-218c-4ad0-82b3-13da36866caf" />
+
 
 
 
