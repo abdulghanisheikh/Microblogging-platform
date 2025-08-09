@@ -14,7 +14,7 @@ A simple microblogging web application where user can post and manage short blog
 ## ✨ Features
 
 - ✅ User registration & login (JWT authentication)
-- ✅ Create, Like, delete posts
+- ✅ Create, Like, Delete and Edit posts
 - ✅ Protected routes for authenticated users
 - ✅ Error handling and validation
 
